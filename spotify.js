@@ -2,7 +2,7 @@ var axios = require("axios");
 var fs = require("fs");
 
 var spotify = function () {
-    // var divider = "\n------------------------------------------------------------\n\n";
+    var divider = "\n------------------------------------------------------------\n\n";
 
     this.findSong = function (song) {
         var URL = "https://api.spotify.com/v1/search?q=" + song + "&type=track&limit=10";
