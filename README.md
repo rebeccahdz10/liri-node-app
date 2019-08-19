@@ -1,5 +1,6 @@
 # liri-node-app
 
+USE THE MARKDOWN SHEET TO WRITE THIS OUT
 This app will use the OMDB, Spotify, and Bands in Town APIs to call information that is requested.
 
 OVERVIEW HERE
