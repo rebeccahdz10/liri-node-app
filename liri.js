@@ -1,6 +1,7 @@
 require("dotenv").config();
 var keys = require("./keys.js");
 var Spotify = require("./spotify.js");
+// var Spotify = require("node-spotify-api");
 
 var spotify = new Spotify(keys.spotify);
 // var omdb = new OMDB(keys.omdb);
@@ -14,9 +15,10 @@ if (!command) {
 }
 
 if (command == "none") {
+    // spotify.findSong(term);
     console.log("You gotta gimme something!");
 }
-if (command == "spotify-this-song") {
+if (command == "song") {
     console.log("Searching Spotify...");
     spotify.findSong(term);
 }
