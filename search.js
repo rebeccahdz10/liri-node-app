@@ -11,6 +11,7 @@ var search = function () {
             id: "18d4241390954cc99ba5e4d2e44178f1",
             secret: "7316f255d7bb470fb5b788a859143aa8"
         });
+
         var term = process.argv.slice(3).join("");
 
         spotify.search({ type: 'track', query: term }, function (err, response) {
@@ -35,7 +36,7 @@ var search = function () {
                 // .catch(function (error) {
                 //     console.log(error);
                 // });
-            }
+            };
         });
     };
 
