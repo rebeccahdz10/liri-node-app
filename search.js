@@ -1,5 +1,6 @@
 var axios = require("axios");
 var fs = require("fs");
+var keys = require("./keys.js");
 var Spotify = require("node-spotify-api");
 
 var search = function () {
@@ -9,9 +10,12 @@ var search = function () {
 
         console.log("I'm trying!");
 
+        // var spotify = new Spotify(keys.spotify);
+
         var spotify = new Spotify({
             id: "18d4241390954cc99ba5e4d2e44178f1",
-            secret: "7316f255d7bb470fb5b788a859143aa8"
+            secret: "7316f255d7bb470fb5b788a859143aa8",
+            bearer: "BQCS6lQakG3OM2_h2bDMLI4AfqURvAHajrSpkqMgIdPxRT-OKedHEUCSq5NFjqE_wfbq5wwZHbSnbyG_2t3dCY4fgz4ty5Jtc7XuJChhl7kAvfDZSzE5kTbppZ7D4xADTpck_WhwdAOarkpTiOM9"
         });
 
         spotify.search({ type: 'track', query: term, limit: 10 }, function (err, response) {

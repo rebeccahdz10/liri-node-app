@@ -17,8 +17,7 @@ if (!term) {
     term = "none";
 }
 if (command == "none") {
-    console.log("You gotta gimme something!");
-    console.log("Try one of these commands:");
+    console.log("You gotta gimme something! Try one of these commands:");
     console.log("song, movie, or concert");
 }
 if (command == "song") {
