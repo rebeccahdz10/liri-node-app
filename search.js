@@ -14,44 +14,37 @@ var search = function () {
             secret: "7316f255d7bb470fb5b788a859143aa8"
         });
 
-        // var term = process.argv.slice(3).join("");
-
-        spotify.search({ type: 'track', query: term }, function (err, response) {
+        spotify.search({ type: 'track', query: term, limit: 10 }, function (err, response) {
 
             if (err) {
                 return console.log('Error occurred: ' + err);
             }
-            else {
-                var song = response.tracks.items
+            console.log(response);
+            // else {
+            //     var song = response.tracks.items
 
-                for (var i = 0; i < response.length; i++) {
-                    var jsonData = JSON.parse(response.data[i].tracks.items);
+            //     for (var i = 0; i < song.length; i++) {
+            //         var jsonData = JSON.parse(response.data[i].tracks.items);
 
-                    var artistData = [
-                        "Name: " + jsonData.artists.name,
-                        "Song: " + jsonData.name,
-                        "Link: " + jsonData.preview_url,
-                        "Album: " + jsonData.album.name
-                    ].join("\n\n");
+            //         var artistData = [
+            //             "Name: " + jsonData.artists.name,
+            //             "Song: " + jsonData.name,
+            //             "Link: " + jsonData.preview_url,
+            //             "Album: " + jsonData.album.name
+            //         ].join("\n\n");
 
-                    fs.appendFile("log.txt", artistData + divider, function (err) {
-                        if (err) throw (err);
-                        console.log(artistData);
-                    });
-                };
-                // .catch(function (error) {
-                //     console.log(error);
-                // });
-            };
+            //         fs.appendFile("log.txt", artistData + divider, function (err) {
+            //             if (err) throw (err);
+            //         });
+            //         console.log(response);
+            //     };
+            // };
         });
     };
 
     // var omdb = function () {
-
     //     this.findMovie = function (movie) {
     //         var URL = ;
-
-
     //     }
 };
 module.exports = search
