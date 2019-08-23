@@ -1,11 +1,14 @@
 # liri-node-app
 
 USE THE MARKDOWN SHEET TO WRITE THIS OUT
-This app will use the OMDB, Spotify, and Bands in Town APIs to call information that is requested.
+#Description
+This app will use the Spotify API to return information on a song that is requested.
 
-OVERVIEW HERE
+##Overview
+The API currently returns up to 10 songs with the song title that is provided. 
 
 INSTRUCTIONS HERE
+To start, run the file in node and you will get a response with instructions on how to start. 
 
 LINK TO VIDEO
 
