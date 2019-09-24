@@ -1,19 +1,16 @@
-# liri-node-app
+# Liri Node App
+This app will use the Spotify API to return information on a song that is requested. There is one issue with this API that I have not been able to solve. Apart from an API key, and a secret key, Spotify now requires an additional authorization token. There isn't much
 
-USE THE MARKDOWN SHEET TO WRITE THIS OUT
-#Description
-This app will use the Spotify API to return information on a song that is requested.
-
-##Overview
+## Overview
 The API currently returns up to 10 songs with the song title that is provided. 
 
-INSTRUCTIONS HERE
+## Instructions
 To start, run the file in node and you will get a response with instructions on how to start. 
 
-LINK TO VIDEO
+## Video Example
+Link: 
 
-LINK TO APP (GITHUB?)
-
-LIST TECHNOLOGY
-
-MY ROLE IN THE APP
+## Technology
+Spotify, OMDB, and Bands in Town APIs
+Javascript
+Node js

@@ -13,7 +13,7 @@ var search = function () {
 
         console.log("I'm still trying!");
 
-        var spotify = new Spotify(keys.spotify);
+        // var spotify = new Spotify(keys.spotify);
 
         spotify.search({ type: 'track', query: term, limit: 10 }, function (err, response) {
 
