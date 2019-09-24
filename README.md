@@ -8,7 +8,7 @@ The API currently returns up to 10 songs with the song title that is provided.
 To start, run the file in node and you will get a response with instructions on how to start. 
 
 ## Video Example
-Link: 
+Link: https://www.screencast.com/t/h1Y8veoh
 
 ## Technology
 Spotify, OMDB, and Bands in Town APIs
